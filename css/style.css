@@ -169,8 +169,9 @@ ol {
 /* ---------------------------------------------------- */
 
 .banner-img-content {
-    padding-left: 5.5rem;
     position: relative;
+    padding-left: 5.5rem;
+    justify-content: flex-end;
 }
 .banner-img-content .banner-img-card {
     border-radius: 12px;
@@ -211,19 +212,14 @@ ol {
     display: flex;
     align-items: center;
 }
-.card-circle-icon {
-    font-size: 2.5rem;
-    color: var(--special-color);
-}
-.card-play-btn-icon {
-    display: none !important;
+.banner-card-icon {
     width: 2.5rem;
     height: 2.5rem;
     font-size: 1.3rem;
     border-radius: 50%;
     line-height: 2.5rem !important;
     text-align: center;
-    color: var(--primary-color);
+    color: transparent;
     background: var(--special-color);
 }
 /* **************************************** Todo: End header section css ************************************** */
