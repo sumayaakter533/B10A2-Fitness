@@ -61,23 +61,28 @@ ol {
     padding-top: 0.875rem;
 }
 .btn {
-    font-weight: 600;
     font-size: 1.125rem;
-    line-height: 1.375rem;
+    font-weight: 600;
     border-radius: 42px;
     padding: 1rem 2.5rem;
     margin-right: 0.875rem;
-    text-align: center;
     transition: all linear 0.4s;
     color: var(--primary-color);
     background: var(--special-color);
     border: 1px solid var(--special-color);
+}
+.btn:hover {
+    background: transparent;
+    border-color: var(--primary-color);
 }
 .text-center {
     text-align: center;
 }
 .display-flex {
     display: flex;
+}
+.flex-width {
+    width: 50%;
 }
 /* ************************************************************************************************************ */
 
@@ -129,6 +134,81 @@ ol {
     background-color: var(--special-color);
 }
 .navbar-bars {
+    display: none;
+}
+/* ************************************************************************************************************ */
+
+/* ************************************* Todo: Banner part css start here ************************************* */
+.banner-container {
+    gap: 4rem;
+}
+.banner-text-content {
+    flex-direction: column;
+    justify-content: center;
+}
+.banner-title {
+    font-size: 4.875rem;
+}
+.banner-title > span {
+    font-family: 'Miama', cursive;
+    font-weight: 400;
+    font-size: 10rem;
+}
+.banner-description {
+    font-size: 1rem;
+    padding: 1.75rem 0;
+}
+
+/* ---------------------------------------------------- */
+
+.banner-img-content {
+    padding-left: 5.5rem;
+    position: relative;
+}
+.banner-img-content .banner-img-card {
+    border-radius: 12px;
+    padding: 1rem 1.5rem;
+    backdrop-filter: blur(20px);
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.banner-img-card h4 {
+    color: var(--primary-color);
+    font-size: 2.5rem;
+    font-weight: 900;
+    line-height: 2.5rem;
+    letter-spacing: 1px;
+}
+.banner-img-card p {
+    color: var(--secondary-color);
+    font-size: 0.813rem;
+    font-weight: 400;
+    padding-top: 5px;
+    line-height: 1.25rem;
+    letter-spacing: 1px;
+}
+
+/* Todo: banner card-1 position */
+.banner-img-content .banner-card-1 {
+    top: 10rem;
+    right: -3rem;
+    position: absolute;
+}
+
+/* Todo: banner card-2 position */
+.banner-img-content .banner-card-2 {
+    position: absolute;
+    bottom: 5rem;
+    left: -1rem;
+    gap: 0.75rem;
+    display: flex;
+    align-items: center;
+}
+.banner-card-2 > .card-circle-icon {
+    font-size: 2.5rem;
+    color: var(--special-color);
+}
+.banner-card-2 > .card-play-btn-icon {
     display: none;
 }
 /* ************************************************************************************************************ */
