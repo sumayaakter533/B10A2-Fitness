@@ -9,10 +9,9 @@ body {
     font-family: 'Miama';
     src: url(../fonts/Miama.ttf);
 }
+/* ************************************************************************************************************ */
 
-/* ! ======================================================================================================= */
-
-/* Todo: Add common css */
+/* ******************************************* Todo: Add common css ******************************************* */
 :root {
     --primary-color: #fff;
     --secondary-color: rgba(255, 255, 255, 0.5);
@@ -40,10 +39,9 @@ ul,
 ol {
     list-style: none;
 }
+/* ************************************************************************************************************ */
 
-/* ! ======================================================================================================= */
-
-/* Todo: Add some common class css */
+/* ************************************** Todo: Add some common class css ************************************* */
 .container {
     max-width: 66.25vw;
     margin: 0 auto;
@@ -58,17 +56,22 @@ ol {
     color: var(--secondary-color);
     font-size: 0.875rem;
     font-weight: 400;
-    line-height: 24px;
+    line-height: 1.5rem;
     letter-spacing: 0.3px;
+    padding-top: 0.875rem;
 }
 .btn {
-    color: var(--primary-color);
-    font-size: 1.125rem;
     font-weight: 600;
-    line-height: 22px;
+    font-size: 1.125rem;
+    line-height: 1.375rem;
     border-radius: 42px;
     padding: 1rem 2.5rem;
+    margin-right: 0.875rem;
+    text-align: center;
+    transition: all linear 0.4s;
+    color: var(--primary-color);
     background: var(--special-color);
+    border: 1px solid var(--special-color);
 }
 .text-center {
     text-align: center;
@@ -76,5 +79,53 @@ ol {
 .display-flex {
     display: flex;
 }
+/* ************************************************************************************************************ */
 
-/* ! ======================================================================================================= */
+/* ************************************** Todo: Start header section css ************************************** */
+#header-section {
+    background-image: linear-gradient(
+        180deg,
+        #111,
+        #222,
+        #222,
+        #222,
+        #111,
+        #000
+    );
+}
+
+/* ************************************* Todo: Navbar part css start here ************************************* */
+.navbar-container {
+    justify-content: space-between;
+    align-items: center;
+    padding: 3.5rem 0 2rem;
+}
+.nav-brand-logo {
+    color: var(--special-color);
+    font-size: 2.25rem;
+    font-weight: 800;
+    font-style: italic;
+    line-height: 120%;
+}
+.navbar-nav {
+    gap: 2.875rem;
+    padding: 0.25rem;
+    border-radius: 39px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.navbar-link {
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 120%;
+    border-radius: 46px;
+    padding: 0.5rem 1.25rem;
+    color: var(--primary-color);
+    transition: all linear 0.4s;
+}
+.navbar-active {
+    background-color: var(--special-color);
+}
+.navbar-link:hover {
+    background-color: var(--special-color);
+}
+/* ************************************************************************************************************ */
