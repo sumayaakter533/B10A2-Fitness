@@ -65,7 +65,7 @@ ol {
     font-weight: 600;
     border-radius: 42px;
     padding: 1rem 2.5rem;
-    margin-right: 0.875rem;
+    /* margin-right: 0.875rem; */
     transition: all linear 0.4s;
     color: var(--primary-color);
     background: var(--special-color);
@@ -158,6 +158,10 @@ ol {
     font-size: 1rem;
     padding: 1.75rem 0;
 }
+.banner-btn .btn:first-child {
+    margin-bottom: 0.875rem;
+    margin-right: 0.875rem;
+}
 
 /* ---------------------------------------------------- */
 
@@ -204,11 +208,19 @@ ol {
     display: flex;
     align-items: center;
 }
-.banner-card-2 > .card-circle-icon {
+.card-circle-icon {
     font-size: 2.5rem;
     color: var(--special-color);
 }
-.banner-card-2 > .card-play-btn-icon {
-    display: none;
+.card-play-btn-icon {
+    display: none !important;
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1.3rem;
+    border-radius: 50%;
+    line-height: 2.5rem !important;
+    text-align: center;
+    color: var(--primary-color);
+    background: var(--special-color);
 }
 /* ************************************************************************************************************ */

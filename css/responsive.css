@@ -32,6 +32,9 @@
     /* ************************************************************************************************************ */
 
     /* ******************************************* Todo: Navbar part css ****************************************** */
+    .navbar-container {
+        padding: 3.5rem 0;
+    }
     .navbar-content {
         display: none;
     }
@@ -44,4 +47,50 @@
         color: var(--primary-color);
     }
     /* ************************************************************************************************************ */
+
+    /* ******************************************* Todo: Banner part css ****************************************** */
+    .banner-container {
+        flex-direction: column;
+        gap: 3rem;
+    }
+    .banner-text-content {
+        width: 100%;
+    }
+    .banner-title {
+        font-size: 2.25rem;
+    }
+    .banner-title > span {
+        font-size: 4.5rem;
+    }
+    .btn {
+        font-size: 1rem;
+        padding: 1rem 2rem;
+    }
+
+    /* ---------------------------------------------------- */
+
+    .banner-img-content {
+        width: 100%;
+        padding-left: 2.5rem;
+    }
+    .banner-img-card h4 {
+        font-size: 2rem;
+    }
+    .banner-img-content .banner-img-card {
+        padding: 0.875rem 1rem;
+    }
+    .banner-img-content .banner-card-1 {
+        top: 8rem;
+        right: 0;
+    }
+    .banner-img-content .banner-card-2 {
+        bottom: 4rem;
+        left: 0rem;
+    }
+    .card-circle-icon {
+        display: none !important;
+    }
+    .card-play-btn-icon {
+        display: block !important;
+    }
 }
