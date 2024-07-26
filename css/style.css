@@ -278,15 +278,20 @@ main {
     border-radius: 1.125rem;
     background-color: #222;
 }
+.run-text-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
 .run-img-container img {
     border-radius: 1.125rem;
     height: 100%;
 }
-.section-title > span {
+.run-text-container .section-title > span {
     display: block;
 }
-.section-description {
-    margin: 0.875rem 0 2.125rem;
+.run-text-container .section-description {
+    padding-bottom: 2.125rem;
 }
 .run-text-container .btn {
     padding: 1rem 4.5rem;
