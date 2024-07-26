@@ -1,7 +1,46 @@
 @media screen and (min-width: 992px) and (max-width: 1400px) {
     .container {
-        max-width: 80vw;
+        max-width: 86vw;
     }
+    /* ************************************************************************************************************ */
+
+    /* ******************************************* Todo: Banner part css ****************************************** */
+    .banner-container {
+        gap: 0;
+    }
+    .banner-title {
+        font-size: 3.3rem;
+    }
+    .banner-title > span {
+        font-size: 7rem;
+    }
+    .btn {
+        font-size: 1rem;
+        padding: 1rem 2rem;
+    }
+
+    /* ---------------------------------------------------- */
+
+    .banner-img-content .banner-card-1 {
+        top: 4rem;
+    }
+    .banner-img-content .banner-card-2 {
+        bottom: 3rem;
+        left: 4rem;
+    }
+    /* ************************************************************************************************************ */
+
+    /* ******************************************** Todo: Habit part css ****************************************** */
+    .habit-heading {
+        width: 55%;
+    }
+    .habit-inner {
+        gap: 2.5rem;
+    }
+    .habit-card img {
+        width: 17vw;
+    }
+    /* ************************************************************************************************************ */
 }
 
 @media screen and (min-width: 576px) and (max-width: 991px) {
@@ -15,11 +54,59 @@
     /* ************************************************************************************************************ */
 
     /* ******************************************* Todo: Navbar part css ****************************************** */
+    .navbar-container {
+        padding: 3.5rem 0 4rem;
+    }
     .navbar-nav {
         gap: 1.25rem;
     }
     .navbar-link {
         font-size: 1rem;
+    }
+    /* ************************************************************************************************************ */
+
+    /* ******************************************* Todo: Banner part css ****************************************** */
+    .banner-container {
+        gap: 0;
+    }
+    .banner-title {
+        font-size: 2.9rem;
+    }
+    .banner-title > span {
+        font-size: 6rem;
+    }
+    .btn {
+        font-size: 1rem;
+        padding: 1rem 2rem;
+    }
+
+    /* ---------------------------------------------------- */
+
+    .banner-img-content {
+        padding-left: 2.5rem;
+    }
+    .banner-img-content .banner-img-card {
+        padding: 0.875rem 1rem;
+    }
+    .banner-img-content .banner-card-1 {
+        top: 9rem;
+        right: -2rem;
+    }
+    .banner-img-content .banner-card-2 {
+        bottom: 3rem;
+        left: 1rem;
+    }
+    .banner-img-card h4 {
+        font-size: 2rem;
+    }
+    /* ************************************************************************************************************ */
+
+    /* ******************************************** Todo: Habit part css ****************************************** */
+    .habit-inner {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .habit-card img {
+        width: 25vw;
     }
     /* ************************************************************************************************************ */
 }
@@ -32,9 +119,6 @@
     /* ************************************************************************************************************ */
 
     /* ******************************************* Todo: Navbar part css ****************************************** */
-    .navbar-container {
-        padding: 3.5rem 0;
-    }
     .navbar-content {
         display: none;
     }
@@ -87,10 +171,28 @@
         bottom: 4rem;
         left: 0rem;
     }
-    .card-circle-icon {
-        display: none !important;
+    .banner-card-icon {
+        color: var(--primary-color);
     }
-    .card-play-btn-icon {
-        display: block !important;
+    /* ************************************************************************************************************ */
+
+    /* ******************************************** Todo: Habit part css ****************************************** */
+    #habit-section {
+        padding: 4rem 2rem;
     }
+    .habit-heading {
+        width: 100%;
+    }
+    .section-title {
+        font-size: 2rem;
+    }
+    .habit-inner {
+        gap: 3.5rem;
+        padding: 0;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .habit-card img {
+        width: 55vw;
+    }
+    /* ************************************************************************************************************ */
 }

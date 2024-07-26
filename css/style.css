@@ -242,7 +242,9 @@ main {
     width: 60%;
 }
 .habit-inner {
-    gap: 4rem;
+    gap: 4.5rem;
+    width: 100%;
+    padding: 0 1.5rem;
     grid-template-columns: repeat(4, 1fr);
 }
 .habit-card > img {
@@ -257,5 +259,8 @@ main {
 .habit-card > p {
     padding-top: 0.375rem;
     line-height: 1.125rem;
+}
+.habit-card p > span {
+    display: block;
 }
 /* ************************************************************************************************************ */
