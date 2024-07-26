@@ -393,7 +393,7 @@ main {
 }
 /* ************************************************************************************************************ */
 
-/* ******************************** Todo: Start training & exercise section css ******************************* */
+/* ************************************ Todo: Start BMI calculator section css ******************************** */
 .BMI-calc-heading {
     padding: 5.5rem 0;
     padding-left: 12.125rem;
@@ -412,13 +412,13 @@ main {
     font-size: 1.75rem;
 }
 .BMI-calc-container {
-    gap: 11rem;
+    gap: 10rem;
 }
 
 /* ---------------------------------------------------- */
 
 .BMI-calc-chart {
-    width: 34%;
+    width: 40%;
 }
 .BMI-calc-chart table {
     border: 1px solid rgba(255, 255, 255, 0.1);
@@ -426,12 +426,15 @@ main {
 }
 .BMI-calc-chart table tr > th {
     font-size: 1rem;
-    padding: 0.875rem 1.5rem;
     text-align: left;
+    font-weight: 600;
+    line-height: 120%;
+    padding: 0.875rem 1.5rem;
     color: var(--primary-color);
 }
 .BMI-calc-chart table tr > td {
     line-height: 120%;
+    letter-spacing: 0;
     padding: 0.875rem 1.5rem;
 }
 

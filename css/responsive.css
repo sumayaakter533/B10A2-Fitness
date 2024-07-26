@@ -51,6 +51,12 @@
         gap: 10rem;
     }
     /* ************************************************************************************************************ */
+
+    /* ************************************ Todo: Start BMI calculator section css ******************************** */
+    .BMI-calc-container {
+        gap: 4rem;
+    }
+    /* ************************************************************************************************************ */
 }
 
 @media screen and (min-width: 576px) and (max-width: 991px) {
@@ -137,6 +143,23 @@
     }
     .training-exercise-inner {
         padding: 3.625rem 0 4.5rem;
+    }
+    /* ************************************************************************************************************ */
+
+    /* ************************************ Todo: Start BMI calculator section css ******************************** */
+    .BMI-calc-container {
+        gap: 2.625rem;
+        flex-direction: column;
+    }
+    .BMI-calc-chart {
+        width: 100%;
+    }
+    .BMI-calc-chart table {
+        width: 70vw;
+    }
+
+    .BMI-calculator {
+        width: 100%;
     }
     /* ************************************************************************************************************ */
 }
@@ -238,6 +261,9 @@
     .run-text-container {
         width: 100%;
     }
+    .run-text-container .section-title > span {
+        display: inline;
+    }
     .run-img-container {
         width: 100%;
     }
@@ -247,10 +273,13 @@
     .training-exercise-heading {
         width: 100%;
     }
+    .training-exercise-heading p > span {
+        display: inline;
+    }
     .training-exercise-inner {
         grid-template-columns: repeat(2, 1fr);
         /* grid-template-rows: 200px 200px 200px; */
-        padding: 2.375rem 0 2rem;
+        padding: 2.375rem 0 0;
     }
     .trainer-img5 {
         grid-column: 3/6;
@@ -290,5 +319,46 @@
         grid-row: 3/4;
     }
 */
+    /* ************************************************************************************************************ */
+
+    /* ************************************ Todo: Start BMI calculator section css ******************************** */
+    .BMI-calc-heading {
+        padding: 2rem 0;
+    }
+    .BMI-calc-heading p > span {
+        display: inline;
+    }
+
+    .BMI-calc-main {
+        padding: 2.2rem 0 2.8rem;
+    }
+    .BMI-calc-main h4 {
+        font-size: 1rem;
+    }
+
+    .BMI-calc-container {
+        gap: 2.625rem;
+        flex-direction: column;
+    }
+    .BMI-calc-chart {
+        width: 100%;
+    }
+    .BMI-calc-chart table {
+        margin-top: 1.5rem;
+    }
+    .BMI-calc-chart table tr > th,
+    td {
+        padding: 0.938rem 1.125rem;
+    }
+
+    .BMI-calculator {
+        width: 100%;
+    }
+    .BMI-calc-form {
+        grid-template-columns: 47% 47%;
+    }
+    .BMI-calc-form .btn {
+        margin-right: 0;
+    }
     /* ************************************************************************************************************ */
 }
