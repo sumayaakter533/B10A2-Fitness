@@ -121,10 +121,22 @@
     /* ************************************************************************************************************ */
 
     /* *********************************** Todo: Start run extra mile section css ********************************* */
+    #run-part {
+        padding-bottom: 4.5rem;
+    }
     .run-container {
         gap: 4rem;
         padding: 1.5rem;
         padding-left: 2.5rem;
+    }
+    /* ************************************************************************************************************ */
+
+    /* ******************************** Todo: Start training & exercise section css ******************************* */
+    .training-exercise-heading {
+        width: 100%;
+    }
+    .training-exercise-inner {
+        padding: 3.625rem 0 4.5rem;
     }
     /* ************************************************************************************************************ */
 }
@@ -229,5 +241,54 @@
     .run-img-container {
         width: 100%;
     }
+    /* ************************************************************************************************************ */
+
+    /* ******************************** Todo: Start training & exercise section css ******************************* */
+    .training-exercise-heading {
+        width: 100%;
+    }
+    .training-exercise-inner {
+        grid-template-columns: repeat(2, 1fr);
+        /* grid-template-rows: 200px 200px 200px; */
+        padding: 2.375rem 0 2rem;
+    }
+    .trainer-img5 {
+        grid-column: 3/6;
+    }
+    .trainer-img1,
+    .trainer-img4 {
+        display: none;
+    }
+
+    /* -----------------------------------------------------------------------------------------
+        * If you want to show all the training & exercise images then use the following codes:
+    --------------------------------------------------------------------------------------------
+    .trainer-img1,
+    .trainer-img3,
+    .trainer-img5 {
+        grid-column: 1/2;
+    }
+
+    .trainer-img2,
+    .trainer-img4,
+    .trainer-img6 {
+        grid-column: 2/3;
+    }
+
+    .trainer-img1,
+    .trainer-img2 {
+        grid-row: 1/2;
+    }
+
+    .trainer-img3,
+    .trainer-img4 {
+        grid-row: 2/3;
+    }
+
+    .trainer-img5,
+    .trainer-img6 {
+        grid-row: 3/4;
+    }
+*/
     /* ************************************************************************************************************ */
 }

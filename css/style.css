@@ -299,8 +299,8 @@ main {
 /* ************************************************************************************************************ */
 
 /* ******************************** Todo: Start training & exercise section css ******************************* */
-.training-exercise-heading {
-    width: 60%;
+.training-exercise-heading p > span {
+    display: block;
 }
 .training-exercise-inner {
     grid-template-rows: 200px 200px;
