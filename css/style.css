@@ -265,3 +265,30 @@ main {
     display: block;
 }
 /* ************************************************************************************************************ */
+
+/* *********************************** Todo: Start run extra mile section css ********************************* */
+/* Todo: Start  part css */
+#run-part {
+    padding-bottom: 5.5rem;
+}
+.run-container {
+    gap: 12rem;
+    padding: 2rem;
+    padding-left: 3.5rem;
+    border-radius: 1.125rem;
+    background-color: #222;
+}
+.run-img-container img {
+    border-radius: 1.125rem;
+    height: 100%;
+}
+.section-title > span {
+    display: block;
+}
+.section-description {
+    margin: 0.875rem 0 2.125rem;
+}
+.run-text-container .btn {
+    padding: 1rem 4.5rem;
+}
+/* ************************************************************************************************************ */
