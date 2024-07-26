@@ -43,7 +43,7 @@ ol {
 
 /* ************************************** Todo: Add some common class css ************************************* */
 .container {
-    max-width: 66.25vw;
+    max-width: 70vw;
     margin: 0 auto;
 }
 .section-title {
@@ -242,12 +242,13 @@ main {
     width: 60%;
 }
 .habit-inner {
-    gap: 4.5rem;
+    gap: 2.5rem;
     width: 100%;
     padding: 0 1.5rem;
     grid-template-columns: repeat(4, 1fr);
 }
 .habit-card > img {
+    width: 13.3vw;
     border-radius: 50%;
     margin-bottom: 1.875rem;
     border: 4px solid rgba(255, 255, 255, 0.1);

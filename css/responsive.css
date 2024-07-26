@@ -21,6 +21,9 @@
 
     /* ---------------------------------------------------- */
 
+    .banner-img-content img {
+        width: 30vw;
+    }
     .banner-img-content .banner-card-1 {
         top: 4rem;
     }
@@ -35,7 +38,8 @@
         width: 55%;
     }
     .habit-inner {
-        gap: 2.5rem;
+        gap: 0;
+        padding: 0;
     }
     .habit-card img {
         width: 17vw;
