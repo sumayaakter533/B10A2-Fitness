@@ -43,7 +43,8 @@ ol {
 
 /* ************************************** Todo: Add some common class css ************************************* */
 .container {
-    max-width: 70vw;
+    max-width: 1120px;
+    padding: 0 30px;
     margin: 0 auto;
 }
 .section-title {
@@ -65,7 +66,6 @@ ol {
     font-weight: 600;
     border-radius: 42px;
     padding: 1rem 2.5rem;
-    /* margin-right: 0.875rem; */
     transition: all linear 0.4s;
     color: var(--primary-color);
     background: var(--special-color);
@@ -75,17 +75,11 @@ ol {
     background: transparent;
     border-color: var(--primary-color);
 }
-.text-center {
-    text-align: center;
-}
 .display-flex {
     display: flex;
 }
 .flex-width {
     width: 50%;
-}
-.display-grid {
-    display: grid;
 }
 /* ************************************************************************************************************ */
 
@@ -104,9 +98,9 @@ ol {
 
 /* ************************************* Todo: Navbar part css start here ************************************* */
 .navbar-container {
-    justify-content: space-between;
     align-items: center;
-    padding: 3.5rem 0 2rem;
+    padding: 3.5rem 30px 2rem;
+    justify-content: space-between;
 }
 .nav-brand-logo {
     color: var(--special-color);
@@ -139,6 +133,11 @@ ol {
 .navbar-bars {
     display: none;
 }
+.menu-bar-icon {
+    cursor: pointer;
+    font-size: 1.4rem;
+    color: var(--primary-color);
+}
 /* ************************************************************************************************************ */
 
 /* ************************************* Todo: Banner part css start here ************************************* */
@@ -161,9 +160,8 @@ ol {
     font-size: 1rem;
     padding: 1.75rem 0;
 }
-.banner-btn .btn:first-child {
-    margin-bottom: 0.875rem;
-    margin-right: 0.875rem;
+.banner-btn {
+    gap: 0.875rem;
 }
 
 /* ---------------------------------------------------- */
@@ -171,7 +169,6 @@ ol {
 .banner-img-content {
     position: relative;
     padding-left: 5.5rem;
-    justify-content: flex-end;
 }
 .banner-img-content .banner-img-card {
     border-radius: 12px;
@@ -223,298 +220,3 @@ ol {
     background: var(--special-color);
 }
 /* **************************************** Todo: End header section css ************************************** */
-
-/* ************************************************************************************************************ */
-main {
-    background: #000;
-}
-
-/* *************************************** Todo: Start habit section css ************************************** */
-#habit-section {
-    padding: 6.25rem 0;
-}
-.habit-container {
-    flex-direction: column;
-    align-items: center;
-    gap: 3.625rem;
-}
-.habit-heading {
-    width: 60%;
-}
-.habit-inner {
-    gap: 2.5rem;
-    width: 100%;
-    padding: 0 1.5rem;
-    grid-template-columns: repeat(4, 1fr);
-}
-.habit-card > img {
-    width: 13.3vw;
-    border-radius: 50%;
-    margin-bottom: 1.875rem;
-    border: 4px solid rgba(255, 255, 255, 0.1);
-}
-.habit-card > h4 {
-    font-size: 1.125rem;
-    font-weight: 600;
-}
-.habit-card > p {
-    padding-top: 0.375rem;
-    line-height: 1.125rem;
-}
-.habit-card p > span {
-    display: block;
-}
-/* ************************************************************************************************************ */
-
-/* *********************************** Todo: Start run extra mile section css ********************************* */
-/* Todo: Start  part css */
-#run-part {
-    padding-bottom: 5.5rem;
-}
-.run-container {
-    gap: 12rem;
-    padding: 2rem;
-    padding-left: 3.5rem;
-    border-radius: 1.125rem;
-    background-color: #222;
-}
-.run-text-container {
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-}
-.run-img-container img {
-    border-radius: 1.125rem;
-    height: 100%;
-}
-.run-text-container .section-title > span {
-    display: block;
-}
-.run-text-container .section-description {
-    padding-bottom: 2.125rem;
-}
-.run-text-container .btn {
-    padding: 1rem 4.5rem;
-}
-/* ************************************************************************************************************ */
-
-/* ******************************** Todo: Start training & exercise section css ******************************* */
-.training-exercise-heading p > span {
-    display: block;
-}
-.training-exercise-inner {
-    grid-template-rows: 200px 200px;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    padding-top: 5.5rem;
-}
-
-.trainer-img1,
-.trainer-img2,
-.trainer-img3 {
-    grid-row: 1/2;
-}
-
-.trainer-img4,
-.trainer-img5,
-.trainer-img6 {
-    grid-row: 2/3;
-}
-
-.trainer-img1 {
-    grid-column: 1/3;
-}
-.trainer-img2 {
-    grid-column: 3/7;
-}
-.trainer-img3 {
-    grid-column: 7/10;
-}
-.trainer-img4 {
-    grid-column: 1/4;
-}
-.trainer-img5 {
-    grid-column: 4/6;
-}
-.trainer-img6 {
-    grid-column: 6/10;
-}
-
-/* * ------------------------ overlay backgrounds start ---------------------------- */
-/* Todo: trainer img-1 */
-.trainer-img1 .training-exercise-img-text {
-    background: rgba(6, 255, 209, 0.5);
-}
-
-/* Todo: trainer img-2 */
-.trainer-img2 .training-exercise-img-text {
-    background: rgba(255, 0, 0, 0.3);
-}
-
-/* Todo: trainer img-3 & img-4 */
-.trainer-img3 .training-exercise-img-text,
-.trainer-img4 .training-exercise-img-text {
-    background: rgba(0, 0, 0, 0.5);
-}
-
-/* Todo: trainer img-5 */
-.trainer-img5 .training-exercise-img-text {
-    background: rgba(68, 255, 0, 0.3);
-}
-
-/* Todo: trainer img-6 */
-.trainer-img6 .training-exercise-img-text {
-    background: rgba(0, 72, 255, 0.3);
-}
-/* * ------------------------ overlay backgrounds end ------------------------------ */
-
-.training-exercise-img {
-    position: relative;
-}
-.training-exercise-img > img {
-    height: 100%;
-}
-.training-exercise-img-text {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem;
-}
-.training-exercise-img-text > p {
-    padding-top: 0;
-    font-weight: 500;
-    font-size: 0.875rem;
-    color: var(--primary-color);
-}
-/* ************************************************************************************************************ */
-
-/* ************************************ Todo: Start BMI calculator section css ******************************** */
-.BMI-calc-heading {
-    padding: 5.5rem 0;
-    padding-left: 12.125rem;
-}
-.BMI-calc-heading p > span {
-    display: block;
-}
-
-/* ---------------------------------------------------- */
-
-.BMI-calc-main {
-    background: #222;
-    padding: 3.25rem 0;
-}
-.BMI-calc-main h4 {
-    font-size: 1.75rem;
-}
-.BMI-calc-container {
-    gap: 10rem;
-}
-
-/* ---------------------------------------------------- */
-
-.BMI-calc-chart {
-    width: 40%;
-}
-.BMI-calc-chart table {
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    margin-top: 3.25rem;
-}
-.BMI-calc-chart table tr > th {
-    font-size: 1rem;
-    text-align: left;
-    font-weight: 600;
-    line-height: 120%;
-    padding: 0.875rem 1.5rem;
-    color: var(--primary-color);
-}
-.BMI-calc-chart table tr > td {
-    line-height: 120%;
-    letter-spacing: 0;
-    padding: 0.875rem 1.5rem;
-}
-
-/* ---------------------------------------------------- */
-
-.BMI-calculator {
-    width: 60%;
-}
-.BMI-calc-form {
-    margin-top: 2.2rem;
-    grid-template-columns: 1fr 1fr;
-    gap: 0.75rem;
-}
-.BMI-activity {
-    grid-column: 1/3;
-}
-.BMI-calc-form input,
-select {
-    height: 48px;
-    border: none;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5rem;
-    border-radius: 0.5rem;
-    padding: 0.75rem 1.25rem;
-    color: var(--secondary-color);
-    background: rgba(255, 255, 255, 0.1);
-}
-.BMI-calc-form select > option {
-    color: #393939;
-}
-.BMI-calc-form .btn {
-    margin-top: 1.5rem;
-    margin-right: 5rem;
-}
-/* ************************************************************************************************************ */
-
-/* ***************************************** Todo: Start Team section css ************************************* */
-#team-section {
-    padding: 5.5rem 0;
-}
-.team-heading p > span {
-    display: block;
-}
-
-.team-inner {
-    background: #222;
-    margin-top: 3.625rem;
-    grid-template-columns: repeat(3, 1fr);
-    border-radius: 1.125rem;
-    padding: 1.25rem;
-    gap: 1.25rem;
-}
-.team-img img {
-    border-radius: 1.125rem;
-    height: 100%;
-}
-
-.team-img {
-    position: relative;
-}
-.team-text {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    padding: 1rem 1.25rem;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.2);
-    border-radius: 1.125rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-}
-
-.team-text h4 {
-    font-size: 1.25rem;
-}
-.team-text p {
-    line-height: 120%;
-    padding-top: 0;
-}
-/* ************************************************************************************************************ */

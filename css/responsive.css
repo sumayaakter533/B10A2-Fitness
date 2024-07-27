@@ -1,180 +1,102 @@
-@media screen and (min-width: 992px) and (max-width: 1400px) {
-    .container {
-        max-width: 86vw;
-    }
-    /* ************************************************************************************************************ */
-
-    /* ******************************************* Todo: Banner part css ****************************************** */
-    .banner-container {
-        gap: 0;
-    }
-    .banner-title {
-        font-size: 3.3rem;
-    }
-    .banner-title > span {
-        font-size: 7rem;
-    }
-    .btn {
-        font-size: 1rem;
-        padding: 1rem 2rem;
-    }
-
-    /* ---------------------------------------------------- */
-
-    .banner-img-content img {
-        width: 30vw;
-    }
-    .banner-img-content .banner-card-1 {
-        top: 4rem;
-    }
-    .banner-img-content .banner-card-2 {
-        bottom: 3rem;
-        left: 4rem;
-    }
-    /* ************************************************************************************************************ */
-
-    /* ******************************************** Todo: Habit part css ****************************************** */
-    .habit-heading {
-        width: 55%;
-    }
-    .habit-inner {
-        gap: 0;
-        padding: 0;
-    }
-    .habit-card img {
-        width: 17vw;
-    }
-    /* ************************************************************************************************************ */
-
-    /* *********************************** Todo: Start run extra mile section css ********************************* */
-    .run-container {
-        gap: 10rem;
-    }
-    /* ************************************************************************************************************ */
-
-    /* ************************************ Todo: Start BMI calculator section css ******************************** */
-    .BMI-calc-container {
-        gap: 4rem;
-    }
-    /* ************************************************************************************************************ */
-}
-
-@media screen and (min-width: 576px) and (max-width: 991px) {
-    /* ****************************************** Todo: Common class css ****************************************** */
-    html {
-        font-size: 14px;
-    }
-    .container {
-        max-width: 90vw;
-    }
-    /* ************************************************************************************************************ */
-
+@media screen and (min-width: 769px) and (max-width: 1199px) {
     /* ******************************************* Todo: Navbar part css ****************************************** */
     .navbar-container {
-        padding: 3.5rem 0 4rem;
+        gap: 4rem;
     }
     .navbar-nav {
-        gap: 1.25rem;
-    }
-    .navbar-link {
-        font-size: 1rem;
+        gap: 1.5rem;
     }
     /* ************************************************************************************************************ */
 
     /* ******************************************* Todo: Banner part css ****************************************** */
     .banner-container {
-        gap: 0;
+        gap: 0rem;
     }
     .banner-title {
-        font-size: 2.9rem;
+        font-size: 3rem;
     }
     .banner-title > span {
         font-size: 6rem;
     }
+    .banner-description {
+        font-size: 0.875rem;
+    }
     .btn {
-        font-size: 1rem;
+        font-size: 0.875rem;
         padding: 1rem 2rem;
+    }
+
+    /* -------------------------------------------------------- */
+
+    .banner-img-content {
+        padding-left: 4rem;
+    }
+    .banner-img-card h4 {
+        font-size: 2rem;
+    }
+    .banner-img-content .banner-img-card {
+        padding: 1rem;
+    }
+    .banner-img-content .banner-card-1 {
+        top: 9rem;
+        right: -1.5rem;
+    }
+    .banner-img-content .banner-card-2 {
+        bottom: 3rem;
+        left: 2rem;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+    /* ******************************************* Todo: Navbar part css ****************************************** */
+    .navbar-container {
+        gap: 3rem;
+    }
+    .navbar-content {
+        display: none;
+    }
+    .navbar-bars {
+        display: block;
+    }
+    /* ************************************************************************************************************ */
+
+    /* ******************************************* Todo: Banner part css ****************************************** */
+    .banner-container {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .banner-text-content {
+        width: 100%;
+    }
+    .banner-title {
+        font-size: 3.5rem;
+    }
+    .banner-title > span {
+        font-size: 7rem;
+    }
+    .banner-description > span {
+        display: block;
     }
 
     /* ---------------------------------------------------- */
 
     .banner-img-content {
-        padding-left: 2.5rem;
+        position: relative;
+        padding-left: 8rem;
     }
-    .banner-img-content .banner-img-card {
-        padding: 0.875rem 1rem;
+    .banner-img-content img {
+        width: 390px;
     }
     .banner-img-content .banner-card-1 {
-        top: 9rem;
-        right: -2rem;
+        top: 13rem;
+        right: -13rem;
     }
     .banner-img-content .banner-card-2 {
-        bottom: 3rem;
-        left: 1rem;
+        bottom: 9.5rem;
+        left: 5.2rem;
     }
-    .banner-img-card h4 {
-        font-size: 2rem;
-    }
-    /* ************************************************************************************************************ */
-
-    /* ******************************************** Todo: Habit part css ****************************************** */
-    .habit-inner {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .habit-card img {
-        width: 25vw;
-    }
-    /* ************************************************************************************************************ */
-
-    /* *********************************** Todo: Start run extra mile section css ********************************* */
-    #run-part {
-        padding-bottom: 4.5rem;
-    }
-    .run-container {
-        gap: 4rem;
-        padding: 1.5rem;
-        padding-left: 2.5rem;
-    }
-    /* ************************************************************************************************************ */
-
-    /* ******************************** Todo: Start training & exercise section css ******************************* */
-    .training-exercise-heading {
-        width: 100%;
-    }
-    .training-exercise-inner {
-        padding: 3.625rem 0 4.5rem;
-    }
-    /* ************************************************************************************************************ */
-
-    /* ************************************ Todo: Start BMI calculator section css ******************************** */
-    .BMI-calc-heading {
-        padding: 0 0 2.875rem 0;
-    }
-    .BMI-calc-container {
-        gap: 2.625rem;
-        flex-direction: column;
-    }
-    .BMI-calc-chart {
-        width: 100%;
-    }
-    .BMI-calc-chart table {
-        width: 70vw;
-    }
-
-    .BMI-calculator {
-        width: 100%;
-    }
-    /* ************************************************************************************************************ */
-
-    /* ***************************************** Todo: Start Team section css ************************************* */
-    #team-section {
-        padding: 4.5rem 0;
-    }
-    .team-heading p {
-        padding: 0.875rem 5rem 0;
-    }
-    .team-inner {
-        grid-template-rows: 200px 200px;
+    .banner-card-icon {
+        color: var(--primary-color);
     }
     /* ************************************************************************************************************ */
 }
@@ -182,7 +104,8 @@
 @media screen and (max-width: 575px) {
     /* ****************************************** Todo: Common class css ****************************************** */
     .container {
-        max-width: 90vw;
+        padding-left: 20px;
+        padding-right: 20px;
     }
     /* ************************************************************************************************************ */
 
@@ -193,17 +116,12 @@
     .navbar-bars {
         display: block;
     }
-    .menu-bar-icon {
-        cursor: pointer;
-        font-size: 1.4rem;
-        color: var(--primary-color);
-    }
     /* ************************************************************************************************************ */
 
     /* ******************************************* Todo: Banner part css ****************************************** */
     .banner-container {
         flex-direction: column;
-        gap: 3rem;
+        gap: 2rem;
     }
     .banner-text-content {
         width: 100%;
@@ -214,16 +132,19 @@
     .banner-title > span {
         font-size: 4.5rem;
     }
+    .banner-btn {
+        gap: 0.5rem;
+    }
     .btn {
-        font-size: 1rem;
-        padding: 1rem 2rem;
+        font-size: 0.875rem;
+        padding: 1rem;
     }
 
     /* ---------------------------------------------------- */
 
     .banner-img-content {
         width: 100%;
-        padding-left: 2.5rem;
+        padding-left: 0;
     }
     .banner-img-card h4 {
         font-size: 2rem;
@@ -232,7 +153,7 @@
         padding: 0.875rem 1rem;
     }
     .banner-img-content .banner-card-1 {
-        top: 8rem;
+        top: 9rem;
         right: 0;
     }
     .banner-img-content .banner-card-2 {
@@ -241,152 +162,6 @@
     }
     .banner-card-icon {
         color: var(--primary-color);
-    }
-    /* ************************************************************************************************************ */
-
-    /* ******************************************** Todo: Habit part css ****************************************** */
-    #habit-section {
-        padding: 4.125rem 2rem;
-    }
-    .habit-heading {
-        width: 100%;
-    }
-    .section-title {
-        font-size: 2rem;
-    }
-    .habit-inner {
-        gap: 3.5rem;
-        padding: 0;
-        grid-template-columns: repeat(1, 1fr);
-    }
-    .habit-card img {
-        width: 55vw;
-    }
-    /* ************************************************************************************************************ */
-
-    /* *********************************** Todo: Start run extra mile section css ********************************* */
-    #run-part {
-        padding-bottom: 4.125rem;
-    }
-    .run-container {
-        gap: 2rem;
-        padding-left: 2rem;
-        flex-direction: column;
-    }
-    .run-text-container {
-        width: 100%;
-    }
-    .run-text-container .section-title > span {
-        display: inline;
-    }
-    .run-img-container {
-        width: 100%;
-    }
-    /* ************************************************************************************************************ */
-
-    /* ******************************** Todo: Start training & exercise section css ******************************* */
-    .training-exercise-heading {
-        width: 100%;
-    }
-    .training-exercise-heading p > span {
-        display: inline;
-    }
-    .training-exercise-inner {
-        grid-template-columns: repeat(2, 1fr);
-        /* grid-template-rows: 200px 200px 200px; */
-        padding: 2.375rem 0 0;
-    }
-    .trainer-img5 {
-        grid-column: 3/6;
-    }
-    .trainer-img1,
-    .trainer-img4 {
-        display: none;
-    }
-
-    /* -----------------------------------------------------------------------------------------
-        * If you want to show all the training & exercise images then use the following codes:
-    --------------------------------------------------------------------------------------------
-    .trainer-img1,
-    .trainer-img3,
-    .trainer-img5 {
-        grid-column: 1/2;
-    }
-
-    .trainer-img2,
-    .trainer-img4,
-    .trainer-img6 {
-        grid-column: 2/3;
-    }
-
-    .trainer-img1,
-    .trainer-img2 {
-        grid-row: 1/2;
-    }
-
-    .trainer-img3,
-    .trainer-img4 {
-        grid-row: 2/3;
-    }
-
-    .trainer-img5,
-    .trainer-img6 {
-        grid-row: 3/4;
-    }
-*/
-    /* ************************************************************************************************************ */
-
-    /* ************************************ Todo: Start BMI calculator section css ******************************** */
-    .BMI-calc-heading {
-        padding: 2rem 0;
-    }
-    .BMI-calc-heading p > span {
-        display: inline;
-    }
-
-    .BMI-calc-main {
-        padding: 2.2rem 0 2.8rem;
-    }
-    .BMI-calc-main h4 {
-        font-size: 1rem;
-    }
-
-    .BMI-calc-container {
-        gap: 2.625rem;
-        flex-direction: column;
-    }
-    .BMI-calc-chart {
-        width: 100%;
-    }
-    .BMI-calc-chart table {
-        margin-top: 1.5rem;
-    }
-    .BMI-calc-chart table tr > th,
-    td {
-        padding: 0.938rem 1.125rem;
-    }
-
-    .BMI-calculator {
-        width: 100%;
-    }
-    .BMI-calc-form {
-        grid-template-columns: 47% 47%;
-    }
-    .BMI-calc-form .btn {
-        margin-right: 0;
-    }
-    /* ************************************************************************************************************ */
-
-    /* ***************************************** Todo: Start Team section css ************************************* */
-    #team-section {
-        padding: 4.125rem 0;
-    }
-    .team-heading p > span {
-        display: inline;
-    }
-    .team-inner {
-        margin-top: 2.25rem;
-        grid-template-columns: repeat(1, 1fr);
     }
     /* ************************************************************************************************************ */
 }
