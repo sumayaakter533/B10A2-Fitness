@@ -103,6 +103,24 @@
         margin-right: 2rem;
     }
     /* ************************************************************************************************************ */
+
+    /* ***************************************** Todo: Start Team section css ************************************* */
+    #team-section {
+        padding: 5rem 0;
+    }
+    .team-heading p {
+        padding: 0.875rem 3rem 0;
+    }
+    .team-heading p > span {
+        display: inline;
+    }
+    .team-text h4 {
+        font-size: 1rem;
+    }
+    .team-inner {
+        margin-top: 3rem;
+    }
+    /* ************************************************************************************************************ */
 }
 
 @media screen and (min-width: 576px) and (max-width: 767px) {
@@ -257,6 +275,25 @@
     }
     .BMI-calc-form .btn {
         margin-right: 5rem;
+    }
+    /* ************************************************************************************************************ */
+
+    /* ***************************************** Todo: Start Team section css ************************************* */
+    #team-section {
+        padding: 4.5rem 0;
+    }
+    .team-heading p {
+        padding: 0.875rem 5rem 0;
+    }
+    .team-heading p > span {
+        display: inline;
+    }
+    .team-inner {
+        margin-top: 3rem;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .team-text h4 {
+        font-size: 1rem;
     }
     /* ************************************************************************************************************ */
 }
@@ -473,6 +510,19 @@
     }
     .BMI-calc-form .btn {
         margin-right: 0;
+    }
+    /* ************************************************************************************************************ */
+
+    /* ***************************************** Todo: Start Team section css ************************************* */
+    #team-section {
+        padding: 4.125rem 0;
+    }
+    .team-heading p > span {
+        display: inline;
+    }
+    .team-inner {
+        margin-top: 2.25rem;
+        grid-template-columns: repeat(1, 1fr);
     }
     /* ************************************************************************************************************ */
 }
