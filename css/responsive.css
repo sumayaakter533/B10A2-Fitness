@@ -71,6 +71,22 @@
         padding-right: 5rem;
     }
     /* ************************************************************************************************************ */
+
+    /* ******************************** Todo: Start training & exercise section css ******************************* */
+    .trainer-img3 .training-exercise-img-text p,
+    .trainer-img5 .training-exercise-img-text p,
+    .trainer-img6 .training-exercise-img-text p {
+        top: calc(100% - 4.5rem);
+        right: 30%;
+    }
+    .trainer-img5 .training-exercise-img-text p {
+        top: calc(100% - 5.5rem);
+        right: 20%;
+    }
+    .trainer-img6 .training-exercise-img-text p {
+        right: 47%;
+    }
+    /* ************************************************************************************************************ */
 }
 
 @media screen and (min-width: 576px) and (max-width: 767px) {
@@ -146,6 +162,9 @@
     /* ************************************************************************************************************ */
 
     /* *********************************** Todo: Start run extra mile section css ********************************* */
+    #run-part {
+        padding-bottom: 5.125rem;
+    }
     .run-container {
         gap: 3rem;
         padding: 2.5rem;
@@ -153,6 +172,41 @@
     }
     .run-text-container p {
         padding-right: 3rem;
+    }
+    /* ************************************************************************************************************ */
+
+    /* ******************************** Todo: Start training & exercise section css ******************************* */
+    .training-exercise-heading p {
+        padding-right: 4rem;
+    }
+    .training-exercise-heading p > span {
+        display: inline;
+    }
+    .training-exercise-inner {
+        padding: 3rem 0 5rem;
+    }
+    .trainer-img3,
+    .trainer-img6 {
+        display: none;
+    }
+    .trainer-img1 {
+        grid-column: 1/6;
+    }
+    .trainer-img2 {
+        grid-column: 6/10;
+    }
+    .trainer-img4 {
+        grid-column: 1/5;
+    }
+    .trainer-img5 {
+        grid-column: 5/10;
+    }
+    .trainer-img4 .training-exercise-img-text p,
+    .trainer-img5 .training-exercise-img-text p {
+        right: 37%;
+    }
+    .trainer-img4 .training-exercise-img-text p {
+        top: calc(100% - 4.5rem);
     }
     /* ************************************************************************************************************ */
 }
@@ -228,6 +282,9 @@
     .section-title {
         font-size: 2rem;
     }
+    .habit-heading p {
+        padding: 0.875rem 1rem 0;
+    }
     .habit-heading p > span {
         display: inline;
     }
@@ -249,5 +306,87 @@
         padding: 2rem;
         grid-template-columns: repeat(1, 1fr);
     }
+    /* ************************************************************************************************************ */
+
+    /* ******************************** Todo: Start training & exercise section css ******************************* */
+    .training-exercise-heading p {
+        padding: 0.875rem 1rem 0 0;
+    }
+    .training-exercise-heading p > span {
+        display: inline;
+    }
+    .trainer-img3,
+    .trainer-img6 {
+        display: none;
+    }
+    .trainer-img1 {
+        grid-column: 1/6;
+    }
+    .trainer-img2 {
+        grid-column: 6/10;
+    }
+    .trainer-img4 {
+        grid-column: 1/5;
+    }
+    .trainer-img5 {
+        grid-column: 5/10;
+    }
+    .training-exercise-img-text > p {
+        left: 1rem;
+        top: 1rem;
+        bottom: 1rem;
+        right: 1rem;
+    }
+    .trainer-img1 .training-exercise-img-text p {
+        top: calc(100% - 2rem);
+    }
+    .trainer-img4 .training-exercise-img-text p,
+    .trainer-img5 .training-exercise-img-text p {
+        top: calc(100% - 5.5rem);
+        right: 20%;
+    }
+
+    /* -----------------------------------------------------------------------------------------
+    * If you want to show all the training & exercise images then use the following codes:
+-------------------------------------------------------------------------------------------- */
+    /* .training-exercise-inner {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .trainer-img1,
+    .trainer-img3,
+    .trainer-img5 {
+        grid-column: 1/2;
+    }
+
+    .trainer-img2,
+    .trainer-img4,
+    .trainer-img6 {
+        grid-column: 2/3;
+    }
+
+    .trainer-img1,
+    .trainer-img2 {
+        grid-row: 1/2;
+    }
+
+    .trainer-img3,
+    .trainer-img4 {
+        grid-row: 2/3;
+    }
+
+    .trainer-img5,
+    .trainer-img6 {
+        grid-row: 3/4;
+    }
+
+    .trainer-img3 .training-exercise-img-text p,
+    .trainer-img4 .training-exercise-img-text p,
+    .trainer-img5 .training-exercise-img-text p,
+    .trainer-img6 .training-exercise-img-text p {
+        top: calc(100% - 5.5rem);
+        right: 30%;
+    } */
+
     /* ************************************************************************************************************ */
 }

@@ -287,3 +287,123 @@ main {
     height: 100%;
 }
 /* ************************************************************************************************************ */
+
+/* ******************************** Todo: Start training & exercise section css ******************************* */
+.training-exercise-heading p > span {
+    display: block;
+}
+.training-exercise-inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 200px 200px;
+    padding: 3.625rem 0 5.5rem;
+}
+
+/* * ----------- grid area of .training-exercise-img ------------- */
+.trainer-img1,
+.trainer-img2,
+.trainer-img3 {
+    grid-row: 1/2;
+}
+
+.trainer-img4,
+.trainer-img5,
+.trainer-img6 {
+    grid-row: 2/3;
+}
+
+.trainer-img1 {
+    grid-column: 1/3;
+}
+.trainer-img2 {
+    grid-column: 3/7;
+}
+.trainer-img3 {
+    grid-column: 7/10;
+}
+.trainer-img4 {
+    grid-column: 1/4;
+}
+.trainer-img5 {
+    grid-column: 4/6;
+}
+.trainer-img6 {
+    grid-column: 6/10;
+}
+/* * ------------------------------------------------------------- */
+
+.training-exercise-img {
+    position: relative;
+}
+.training-exercise-img > img {
+    height: 100%;
+}
+.training-exercise-img-text {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+
+/* * ------- position of training-exercise-img-text > p ---------- */
+.training-exercise-img-text > p {
+    padding-top: 0;
+    line-height: 1.125rem;
+    color: var(--primary-color);
+    position: absolute;
+    left: 1.5rem;
+    top: 1.5rem;
+    bottom: 1.5rem;
+    right: 1.5rem;
+}
+
+.trainer-img1 .training-exercise-img-text p {
+    top: calc(100% - 2.5rem);
+}
+
+.trainer-img3 .training-exercise-img-text p,
+.trainer-img4 .training-exercise-img-text p,
+.trainer-img5 .training-exercise-img-text p,
+.trainer-img6 .training-exercise-img-text p {
+    top: calc(100% - 3.5rem);
+    right: 49%;
+}
+
+.trainer-img4 .training-exercise-img-text p {
+    top: 1.5rem;
+}
+.trainer-img5 .training-exercise-img-text p {
+    right: 1.5rem;
+}
+/* * ------------------------------------------------------------- */
+
+/* * --------backgrounds of training-exercise-img-text ----------- */
+/* Todo: trainer img-1 */
+.trainer-img1 .training-exercise-img-text {
+    background: rgba(6, 255, 209, 0.5);
+}
+
+/* Todo: trainer img-2 */
+.trainer-img2 .training-exercise-img-text {
+    background: rgba(255, 0, 0, 0.3);
+}
+
+/* Todo: trainer img-3 & img-4 */
+.trainer-img3 .training-exercise-img-text,
+.trainer-img4 .training-exercise-img-text {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+/* Todo: trainer img-5 */
+.trainer-img5 .training-exercise-img-text {
+    background: rgba(68, 255, 0, 0.3);
+}
+
+/* Todo: trainer img-6 */
+.trainer-img6 .training-exercise-img-text {
+    background: rgba(0, 72, 255, 0.3);
+}
+/* * ------------------------------------------------------------- */
+
+/* ************************************************************************************************************ */
