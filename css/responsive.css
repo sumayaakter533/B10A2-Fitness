@@ -1,4 +1,4 @@
-@media screen and (min-width: 769px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
     /* ******************************************* Todo: Navbar part css ****************************************** */
     .navbar-container {
         gap: 4rem;
@@ -45,9 +45,24 @@
         bottom: 3rem;
         left: 2rem;
     }
+    /* ************************************************************************************************************ */
+
+    /* ******************************************** Todo: Habit part css ****************************************** */
+    #habit-section {
+        padding: 5.25rem 0;
+    }
+    .habit-inner {
+        gap: 1.5rem;
+    }
+    .habit-card > p {
+        margin: 0 -20px;
+    }
+    .habit-card p > span {
+        display: inline;
+    }
 }
 
-@media screen and (min-width: 576px) and (max-width: 768px) {
+@media screen and (min-width: 576px) and (max-width: 767px) {
     /* ******************************************* Todo: Navbar part css ****************************************** */
     .navbar-container {
         gap: 3rem;
@@ -97,6 +112,25 @@
     }
     .banner-card-icon {
         color: var(--primary-color);
+    }
+    /* ************************************************************************************************************ */
+
+    /* ******************************************** Todo: Habit part css ****************************************** */
+    #habit-section {
+        padding: 5.125rem 0;
+    }
+    .habit-heading p {
+        padding: 0.875rem 5rem 0;
+    }
+    .habit-heading p > span {
+        display: inline;
+    }
+    .habit-inner {
+        gap: 3.5rem;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .habit-card img {
+        width: 80%;
     }
     /* ************************************************************************************************************ */
 }
@@ -162,6 +196,25 @@
     }
     .banner-card-icon {
         color: var(--primary-color);
+    }
+    /* ************************************************************************************************************ */
+
+    /* ******************************************** Todo: Habit part css ****************************************** */
+    #habit-section {
+        padding: 4.125rem 0;
+    }
+    .section-title {
+        font-size: 2rem;
+    }
+    .habit-heading p > span {
+        display: inline;
+    }
+    .habit-inner {
+        gap: 3.5rem;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .habit-card img {
+        width: 60%;
     }
     /* ************************************************************************************************************ */
 }
