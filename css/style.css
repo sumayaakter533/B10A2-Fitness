@@ -260,3 +260,30 @@ main {
     display: block;
 }
 /* ************************************************************************************************************ */
+
+/* *********************************** Todo: Start run extra mile section css ********************************* */
+#run-part {
+    padding-bottom: 5.5rem;
+}
+.run-container {
+    background: #222;
+    border-radius: 1.125rem;
+    padding: 2rem 2rem 2rem 3.5rem;
+    grid-template-columns: repeat(2, 40% 41.3%);
+    display: grid;
+    gap: 12rem;
+}
+.run-text-container h2 > span {
+    display: block;
+}
+.run-text-container p {
+    padding-bottom: 2.125rem;
+}
+.run-text-container .btn {
+    padding: 1rem 4.5rem;
+}
+.run-img-container img {
+    border-radius: 1.125rem;
+    height: 100%;
+}
+/* ************************************************************************************************************ */
