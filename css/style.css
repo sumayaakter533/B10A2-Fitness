@@ -13,9 +13,10 @@ body {
 
 /* ******************************************* Todo: Add common css ******************************************* */
 :root {
+    --section-gap: 5.5rem;
     --primary-color: #fff;
-    --secondary-color: rgba(255, 255, 255, 0.5);
     --special-color: #e6533c;
+    --secondary-color: rgba(255, 255, 255, 0.5);
 }
 
 * {
@@ -80,6 +81,15 @@ ol {
 }
 .flex-width {
     width: 50%;
+}
+.display-grid {
+    display: grid;
+}
+.display-block {
+    display: block;
+}
+.text-center {
+    text-align: center;
 }
 /* ************************************************************************************************************ */
 
@@ -215,9 +225,8 @@ ol {
     height: 2.5rem;
     font-size: 1.3rem;
     border-radius: 50%;
-    line-height: 2.5rem !important;
-    text-align: center;
     color: transparent;
+    line-height: 2.5rem !important;
     background: var(--special-color);
 }
 /* **************************************** Todo: End header section css ************************************** */
@@ -229,15 +238,10 @@ main {
 
 /* *************************************** Todo: Start habit section css ************************************** */
 #habit-section {
-    padding: 6.25rem 0;
-    text-align: center;
-}
-.habit-heading p > span {
-    display: block;
+    padding: var(--section-gap) 0;
 }
 .habit-inner {
     gap: 2.5rem;
-    display: grid;
     margin-top: 3.625rem;
     grid-template-columns: repeat(4, 1fr);
 }
@@ -257,25 +261,18 @@ main {
     padding-top: 0.375rem;
     line-height: 1.125rem;
 }
-.habit-card p > span {
-    display: block;
-}
 /* ************************************************************************************************************ */
 
 /* *********************************** Todo: Start run extra mile section css ********************************* */
 #run-part {
-    padding-bottom: 5.5rem;
+    padding-bottom: var(--section-gap);
 }
 .run-container {
     background: #222;
     border-radius: 1.125rem;
     padding: 2rem 2rem 2rem 3.5rem;
     grid-template-columns: repeat(2, 40% 41.3%);
-    display: grid;
     gap: 12rem;
-}
-.run-text-container h2 > span {
-    display: block;
 }
 .run-text-container p {
     padding-bottom: 2.125rem;
@@ -290,14 +287,10 @@ main {
 /* ************************************************************************************************************ */
 
 /* ******************************** Todo: Start training & exercise section css ******************************* */
-.training-exercise-heading p > span {
-    display: block;
-}
 .training-exercise-inner {
-    display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 200px 200px;
-    padding: 3.625rem 0 5.5rem;
+    padding-top: 3.625rem;
 }
 
 /* * ----------- grid area of .training-exercise-img ------------- */
@@ -411,11 +404,8 @@ main {
 
 /* ************************************ Todo: Start BMI calculator section css ******************************** */
 .BMI-calc-heading {
-    padding-bottom: 5.5rem;
+    padding: var(--section-gap) 0;
     padding-left: 12.125rem;
-}
-.BMI-calc-heading p > span {
-    display: block;
 }
 
 .BMI-calc-main {
@@ -426,7 +416,6 @@ main {
     font-size: 1.75rem;
 }
 .BMI-calc-container {
-    display: grid;
     grid-template-columns: repeat(2, 50% 50%);
 }
 
@@ -452,7 +441,6 @@ main {
 
 /* * ------------ BMI calculator form part start here ------------ */
 .BMI-calc-form {
-    display: grid;
     margin-top: 2.2rem;
     grid-template-columns: repeat(2, 1fr);
     gap: 0.75rem;
@@ -484,18 +472,11 @@ select {
 
 /* ***************************************** Todo: Start Team section css ************************************* */
 #team-section {
-    padding: 5.5rem 0;
-}
-.team-heading {
-    text-align: center;
-}
-.team-heading p > span {
-    display: block;
+    padding: var(--section-gap) 0;
 }
 
 .team-inner {
     gap: 1.25rem;
-    display: grid;
     grid-template-columns: repeat(3, 1fr);
     background: #222;
     margin-top: 3.625rem;
@@ -541,16 +522,12 @@ select {
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    padding-top: 5rem;
-}
-.training-rate-heading {
-    text-align: center;
+    padding: var(--section-gap) 0;
 }
 
 .training-rate-inner {
-    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    padding: 3.875rem 0 5.5rem;
+    padding-top: 3.875rem;
     gap: 2.2rem;
 }
 .training-rate-card {
@@ -563,7 +540,6 @@ select {
 .training-rate-card-heading {
     padding: 2rem;
     background: #222;
-    text-align: center;
     border-top-left-radius: 18px;
     border-top-right-radius: 18px;
 }
@@ -607,13 +583,6 @@ select {
 .training-rate-card-description ul li:last-child {
     border: none;
 }
-.training-rate-card1 > .training-rate-card-description ul li:nth-child(4),
-.training-rate-card1 > .training-rate-card-description ul li:nth-child(5),
-.training-rate-card1 > .training-rate-card-description ul li:nth-child(6),
-.training-rate-card2 > .training-rate-card-description ul li:nth-child(5),
-.training-rate-card2 > .training-rate-card-description ul li:nth-child(6) {
-    text-align: center;
-}
 .training-rate-card-description ul li > i {
     padding-right: 4px;
     color: green;
@@ -627,13 +596,11 @@ select {
 }
 
 .training-rate-btn .btn {
-    display: block;
     border-radius: 0;
     background: #222;
     border: none;
     border-bottom-left-radius: 18px;
     border-bottom-right-radius: 18px;
-    text-align: center;
     padding: 1.4rem;
 }
 /* **************************************** Todo: Challenge part end here  ************************************ */
@@ -643,10 +610,9 @@ select {
     background: #222;
 }
 .footer-container {
-    display: grid;
     grid-template-columns: 40% 18% 18%;
     justify-content: space-between;
-    padding: 4.125rem 0 5rem;
+    padding: var(--section-gap) 0;
 }
 
 /* * ------------------------------------------------------------- */
@@ -680,7 +646,6 @@ select {
 .footer-btm {
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     padding: 2.25rem;
-    text-align: center;
 }
 .footer-btm p {
     padding-top: 0;
