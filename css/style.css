@@ -94,6 +94,7 @@ ol {
         #111,
         #000
     );
+    background-attachment: fixed;
 }
 
 /* ************************************* Todo: Navbar part css start here ************************************* */
@@ -531,6 +532,113 @@ select {
     padding-top: 0;
 }
 /* ************************************************************************************************************ */
+
+/* ****************************** Todo: Challenge part - Training Rates css start here  *********************** */
+#training-rate-section {
+    background-image: linear-gradient(180deg, #000, transparent),
+        url(../images/layered-wave.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding-top: 5rem;
+}
+.training-rate-heading {
+    text-align: center;
+}
+
+.training-rate-inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 3.875rem 0 5.5rem;
+    gap: 2.2rem;
+}
+.training-rate-card {
+    border: 1px solid #222;
+    transition: all linear 0.4s;
+    border-radius: 18px;
+    transform: scaleY(0.9);
+}
+.training-rate-card:hover {
+    transform: scaleY(1);
+}
+.training-rate-card-heading {
+    padding: 2rem;
+    background: #222;
+    text-align: center;
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+}
+.training-rate-card-heading h4 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.training-rate-card-heading p {
+    font-family: 'Miama', cursive;
+    font-size: 1.8rem;
+}
+.training-rate-card-heading h2 {
+    padding-top: 2rem;
+    color: var(--special-color);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.training-rate-card-heading span {
+    color: var(--primary-color);
+    padding-left: 1rem;
+    font-size: 1.4rem;
+}
+
+.training-rate-card-description {
+    padding: 1.4rem 1rem;
+}
+.training-rate-card-description h4 {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+.training-rate-card-description ul {
+    padding: 0 1rem;
+}
+.training-rate-card-description ul li {
+    font-size: 13px;
+    line-height: 1rem;
+    border-bottom: 1px solid #222;
+    padding: 12px 0;
+}
+
+.training-rate-card-description ul li:last-child {
+    border: none;
+}
+.training-rate-card1 > .training-rate-card-description ul li:nth-child(4),
+.training-rate-card1 > .training-rate-card-description ul li:nth-child(5),
+.training-rate-card1 > .training-rate-card-description ul li:nth-child(6),
+.training-rate-card2 > .training-rate-card-description ul li:nth-child(5),
+.training-rate-card2 > .training-rate-card-description ul li:nth-child(6) {
+    text-align: center;
+}
+.training-rate-card-description ul li > i {
+    padding-right: 4px;
+    color: green;
+}
+.training-rate-card1 > .training-rate-card-description ul li:nth-child(4) > i,
+.training-rate-card1 > .training-rate-card-description ul li:nth-child(5) > i,
+.training-rate-card1 > .training-rate-card-description ul li:nth-child(6) > i,
+.training-rate-card2 > .training-rate-card-description ul li:nth-child(5) > i,
+.training-rate-card2 > .training-rate-card-description ul li:nth-child(6) > i {
+    color: var(--special-color);
+}
+
+.training-rate-btn .btn {
+    display: block;
+    border-radius: 0;
+    background: #222;
+    border: none;
+    border-bottom-left-radius: 18px;
+    border-bottom-right-radius: 18px;
+    text-align: center;
+    margin-top: 2rem;
+    padding: 1.4rem;
+}
+/* **************************************** Todo: Challenge part end here  ************************************ */
 
 /* **************************************** Todo: Start Footer section css ************************************ */
 #footer-part {
