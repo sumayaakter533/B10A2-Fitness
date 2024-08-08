@@ -10,8 +10,9 @@ body {
 
 /* ******************************************* Todo: Add common css ******************************************* */
 :root {
-    --py-1: 2rem;
-    --py-2: 3.5rem;
+    --p1: 2rem;
+    --p2: 2.75rem;
+    --p3: 3.5rem;
     --primary-color: #fff;
     --special-color: #e6533c;
     --secondary-color: rgba(255, 255, 255, 0.5);
@@ -102,7 +103,7 @@ ol {
 .navbar-container {
     align-items: center;
     justify-content: space-between;
-    padding: var(--py-2) 0 var(--py-1);
+    padding: var(--p3) 0 var(--p1);
 }
 .nav-brand-logo {
     font-size: 2.25rem;
@@ -230,7 +231,7 @@ main {
 /* *************************************** Todo: Start habit section css ************************************** */
 .habit-inner {
     gap: 2.5rem;
-    margin-top: 2.75rem;
+    margin-top: var(--p2);
     grid-template-columns: repeat(4, 1fr);
 }
 .habit-card {
@@ -254,7 +255,8 @@ main {
 .run-container {
     background: #222;
     border-radius: 1.125rem;
-    padding: 2rem 2rem 2rem 3.5rem;
+    padding: var(--p1);
+    padding-left: var(--p3);
     grid-template-columns: repeat(2, 40% 41.3%);
     gap: 12rem;
 }
@@ -271,7 +273,7 @@ main {
 .training-exercise-inner {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 200px 200px;
-    padding-top: 2.75rem;
+    padding-top: var(--p2);
 }
 
 /* ----------- grid area of .training-exercise-img ------------- */
@@ -376,7 +378,7 @@ main {
 }
 .BMI-calc-main {
     background: #222;
-    padding: 3.25rem 0;
+    padding: var(--p3) 0;
 }
 .BMI-calc-main h4 {
     font-size: 1.75rem;
@@ -388,7 +390,7 @@ main {
 /* ----------- BMI calculator chart part start here ------------ */
 .BMI-calc-chart table {
     border: 1px solid rgba(255, 255, 255, 0.1);
-    margin-top: 3.25rem;
+    margin-top: var(--p3);
 }
 .BMI-calc-chart table tr > th {
     font-size: 1rem;
@@ -406,7 +408,7 @@ main {
 
 /* ------------ BMI calculator form part start here ------------ */
 .BMI-calc-form {
-    margin-top: 2.2rem;
+    margin-top: var(--p1);
     grid-template-columns: repeat(2, 1fr);
     gap: 0.75rem;
 }
@@ -430,8 +432,8 @@ select {
     color: #393939;
 }
 .BMI-calc-form .btn {
-    margin-top: 1.5rem;
-    margin-right: 3rem;
+    margin-top: var(--p1);
+    margin-right: var(--p3);
 }
 
 /* ***************************************** Todo: Start Team section css ************************************* */
@@ -440,7 +442,7 @@ select {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 320px);
     background: #222;
-    margin-top: 3.625rem;
+    margin-top: var(--p2);
     border-radius: 1.125rem;
     padding: 1.25rem;
 }
@@ -484,8 +486,8 @@ select {
 }
 .training-rate-inner {
     grid-template-columns: 1fr 1fr 1fr;
-    padding-top: 3.875rem;
-    gap: 2.2rem;
+    padding-top: var(--p3);
+    gap: var(--p1);
 }
 .training-rate-card {
     border-radius: 18px;
@@ -495,8 +497,8 @@ select {
     transform: scaleY(1.05);
 }
 .training-rate-card-heading {
-    padding: 2rem;
     background: #222;
+    padding: var(--p1);
     border-top-left-radius: 18px;
     border-top-right-radius: 18px;
 }
@@ -509,7 +511,7 @@ select {
     font-size: 1.8rem;
 }
 .training-rate-card-heading h2 {
-    padding-top: 2rem;
+    padding-top: 1rem;
     color: var(--special-color);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
@@ -598,10 +600,9 @@ select {
 
 .footer-btm {
     border-top: 1px solid rgba(255, 255, 255, 0.1);
-    padding: 2.25rem;
+    padding: var(--p1);
 }
 .footer-btm p {
-    padding-top: 0;
     font-size: 1.25rem;
 }
 /* ************************************************************************************************************ */
