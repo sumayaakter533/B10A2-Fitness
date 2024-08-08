@@ -365,12 +365,16 @@
 }
 
 @media screen and (max-width: 575px) {
-    /* ****************************************** Todo: Common class css ****************************************** */
+    :root {
+        --section-gap: 4.125rem;
+    }
     .container {
         padding-left: 20px;
         padding-right: 20px;
     }
-    /* ************************************************************************************************************ */
+    .section-title {
+        font-size: 2rem;
+    }
 
     /* ******************************************* Todo: Navbar part css ****************************************** */
     .navbar-content {
@@ -379,15 +383,11 @@
     .navbar-bars {
         display: block;
     }
-    /* ************************************************************************************************************ */
 
     /* ******************************************* Todo: Banner part css ****************************************** */
     .banner-container {
-        flex-direction: column;
-        gap: 2rem;
-    }
-    .banner-text-content {
-        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+        gap: var(--p1);
     }
     .banner-title {
         font-size: 2.25rem;
@@ -406,8 +406,7 @@
     /* ---------------------------------------------------- */
 
     .banner-img-content {
-        width: 100%;
-        padding-left: 0;
+        padding-left: 1.5rem;
     }
     .banner-img-card h4 {
         font-size: 2rem;
@@ -426,47 +425,41 @@
     .banner-card-icon {
         color: var(--primary-color);
     }
-    /* ************************************************************************************************************ */
 
     /* ******************************************** Todo: Habit part css ****************************************** */
     #habit-section {
-        padding: 4.125rem 0;
-    }
-    .section-title {
-        font-size: 2rem;
-    }
-    .habit-heading p {
-        padding: 0.875rem 1rem 0;
+        padding: 0 0 var(--section-gap);
     }
     .habit-heading p > span {
         display: inline;
     }
     .habit-inner {
-        gap: 3.5rem;
+        margin-top: var(--p1);
         grid-template-columns: repeat(1, 1fr);
     }
     .habit-card img {
         width: 60%;
     }
-    /* ************************************************************************************************************ */
+    .habit-card > h4 {
+        padding-top: 1.4rem;
+    }
 
     /* *********************************** Todo: Start run extra mile section css ********************************* */
-    #run-part {
-        padding-bottom: 4.125rem;
-    }
     .run-container {
-        gap: 2rem;
-        padding: 2rem;
+        gap: var(--p1);
+        padding-left: var(--p1);
         grid-template-columns: repeat(1, 1fr);
     }
-    /* ************************************************************************************************************ */
 
     /* ******************************** Todo: Start training & exercise section css ******************************* */
-    .training-exercise-heading p {
-        padding: 0.875rem 1rem 0 0;
+    #training-exercise-part {
+        padding: var(--section-gap) 0 var(--p2);
     }
     .training-exercise-heading p > span {
         display: inline;
+    }
+    .training-exercise-inner {
+        padding-top: var(--p1);
     }
     .trainer-img3,
     .trainer-img6 {
@@ -497,10 +490,6 @@
     .trainer-img5 .training-exercise-img-text p {
         top: calc(100% - 5.5rem);
         right: 20%;
-    }
-
-    .training-exercise-inner {
-        padding: 3.625rem 0 4.5rem;
     }
 
     /* -----------------------------------------------------------------------------------------
@@ -545,29 +534,23 @@
         right: 30%;
     } */
 
-    /* ************************************************************************************************************ */
-
     /* ************************************ Todo: Start BMI calculator section css ******************************** */
-    #BMI-calculator-part .section-description {
-        padding-right: 1rem;
-    }
     .BMI-calc-heading {
-        padding-bottom: 4.5rem;
-        padding-left: 0px;
+        padding-left: 0;
+        margin-bottom: var(--p1);
     }
     .BMI-calc-heading p > span {
         display: inline;
     }
     .BMI-calc-container {
-        gap: 3rem;
+        gap: var(--p2);
         grid-template-columns: repeat(1, 1fr);
     }
     .BMI-calc-main h4 {
         font-size: 1.2rem;
     }
     .BMI-calc-chart table {
-        width: 100%;
-        margin-top: 2.2rem;
+        margin-top: var(--p1);
     }
     .BMI-calc-chart table tr > th,
     .BMI-calc-chart table tr > td {
@@ -577,29 +560,27 @@
     .BMI-calc-form .btn {
         margin-right: 0;
     }
-    /* ************************************************************************************************************ */
 
     /* ***************************************** Todo: Start Team section css ************************************* */
     #team-section {
-        padding: 4.125rem 0 5rem;
+        padding: var(--section-gap) 0;
     }
     .team-heading p > span {
         display: inline;
     }
     .team-inner {
-        margin-top: 2.25rem;
+        margin-top: var(--p1);
         grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 300px);
     }
-    /* ************************************************************************************************************ */
 
     /* ****************************** Todo: Challenge part - Training Rates css start here  *********************** */
     #training-rate-section {
-        padding-top: 3rem;
+        padding: var(--section-gap) 0;
     }
     .training-rate-inner {
+        padding-top: var(--p1);
         grid-template-columns: 1fr;
-        padding: 0.875rem 0 2.5rem;
-        gap: 0;
     }
     .training-rate-card:hover {
         transform: scaleY(1);
@@ -608,19 +589,25 @@
 
     /* **************************************** Todo: Start Footer section css ************************************ */
     .footer-container {
-        gap: 2rem;
-        padding: 2.75rem 0 4.5rem;
+        gap: var(--p1);
+        padding: var(--section-gap) 0;
         grid-template-columns: repeat(1, 1fr);
     }
     .footer-text h2 {
-        font-size: 4rem;
-    }
-    .footer-text p {
-        padding-right: 1rem;
+        font-size: 3rem;
     }
     .footer-links h3 {
-        font-size: 2rem;
+        font-size: 1.8rem;
         margin-bottom: 2rem;
     }
-    /* ************************************************************************************************************ */
+    .footer-links ul li a {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+    .footer-btm {
+        padding: 1rem;
+    }
+    .footer-btm p {
+        font-size: 1rem;
+    }
 }
