@@ -15,34 +15,38 @@
         <header id="header-section">
             <!-- Todo: Start navbar part -->
             <nav id="navbar">
-                <div class="container navbar-container display-flex">
-                    <div class="navbar-brand">
-                        <a class="nav-brand-logo" href="index.html">Fitness</a>
-                    </div>
+                <div class="container">
+                    <div class="navbar-container display-flex">
+                        <div class="navbar-brand">
+                            <a class="nav-brand-logo" href="index.html"
+                                >Fitness</a
+                            >
+                        </div>
 
-                    <div class="navbar-content">
-                        <ul class="navbar-nav display-flex">
-                            <li class="navbar-item">
-                                <a
-                                    class="navbar-link navbar-active"
-                                    href="#header-section"
-                                    >Home</a
-                                >
-                            </li>
-                            <li class="navbar-item">
-                                <a class="navbar-link" href="#">Service</a>
-                            </li>
-                            <li class="navbar-item">
-                                <a class="navbar-link" href="#">contact</a>
-                            </li>
-                            <li class="navbar-item">
-                                <a class="navbar-link" href="#">About</a>
-                            </li>
-                        </ul>
-                    </div>
+                        <div class="navbar-content">
+                            <ul class="navbar-nav display-flex">
+                                <li class="navbar-item">
+                                    <a
+                                        class="navbar-link navbar-active"
+                                        href="#header-section"
+                                        >Home</a
+                                    >
+                                </li>
+                                <li class="navbar-item">
+                                    <a class="navbar-link" href="#">Service</a>
+                                </li>
+                                <li class="navbar-item">
+                                    <a class="navbar-link" href="#">contact</a>
+                                </li>
+                                <li class="navbar-item">
+                                    <a class="navbar-link" href="#">About</a>
+                                </li>
+                            </ul>
+                        </div>
 
-                    <div class="navbar-bars">
-                        <i class="fa-solid fa-bars menu-bar-icon"></i>
+                        <div class="navbar-bars">
+                            <i class="fa-solid fa-bars menu-bar-icon"></i>
+                        </div>
                     </div>
                 </div>
             </nav>
@@ -50,8 +54,9 @@
 
             <!-- Todo: Start Banner part -->
             <section id="banner-section">
-                <div class="container banner-container display-flex">
-                    <div class="banner-text-content flex-width display-flex">
+                <div class="container banner-container display-grid">
+                    <!-- Todo: Banner text content -->
+                    <div class="banner-text-content display-flex">
                         <h1 class="banner-title section-title">
                             Get body in <br />
                             <span>shape</span> & stay <br />
@@ -65,13 +70,14 @@
                                 and stay fit!</span
                             >
                         </p>
-                        <div class="banner-btn display-flex">
+                        <div class="banner-btn">
                             <a class="btn" href="#">Join Club Now!</a>
                             <a class="btn" href="#">Download App</a>
                         </div>
                     </div>
 
-                    <div class="banner-img-content flex-width">
+                    <!-- Todo: Banner img content -->
+                    <div class="banner-img-content">
                         <div class="banner-img-card banner-card-1">
                             <h4>500+</h4>
                             <p>Free Workout Videos</p>
@@ -97,7 +103,7 @@
 
         <main>
             <!-- Todo: Start Habit part -->
-            <section id="habit-section" class="text-center">
+            <section id="habit-section" class="text-center section-gap">
                 <div class="container habit-container">
                     <div class="habit-heading">
                         <h2 class="section-title">Change Your Habits</h2>
@@ -196,7 +202,7 @@
             <!-- Todo: End Run Extra Mile part -->
 
             <!-- Todo: Start Training & Exercise part -->
-            <section id="training-exercise-part">
+            <section id="training-exercise-part" class="section-gap">
                 <div class="container training-exercise-container">
                     <div class="training-exercise-heading">
                         <h2 class="section-title">Trainings and Exercises</h2>
@@ -378,7 +384,7 @@
             <!-- Todo: End BMI calculator part -->
 
             <!-- Todo: Start Team part -->
-            <section id="team-section">
+            <section id="team-section" class="section-gap">
                 <div class="container team-container">
                     <div class="team-heading text-center">
                         <h2 class="section-title">Meet Our Team</h2>
@@ -463,7 +469,7 @@
             <!-- Todo: End Team part -->
 
             <!-- Todo: Start challenge part - Training Rates section -->
-            <section id="training-rate-section">
+            <section id="training-rate-section" class="section-gap">
                 <div class="container training-rate-container">
                     <div class="training-rate-heading text-center">
                         <h2 class="section-title">Training Rates</h2>
@@ -475,7 +481,7 @@
                     <div class="training-rate-inner display-grid">
                         <!-- todo: training rate card-1 -->
                         <div class="training-rate-card training-rate-card1">
-                            <div class="training-rate-card-heading text-center">
+                            <div class="training-rate-card-heading">
                                 <h4 class="section-title">Basic</h4>
                                 <p class="section-description">
                                     7 Days Free Trial
@@ -492,15 +498,18 @@
                                     Diet Or Fitness Report
                                 </h4>
                                 <ul>
-                                    <li class="section-description">
+                                    <li
+                                        class="section-description display-flex">
                                         <i class="fa-solid fa-check"></i>
                                         Genetic sample test kit
                                     </li>
-                                    <li class="section-description">
+                                    <li
+                                        class="section-description display-flex">
                                         <i class="fa-solid fa-check"></i>
                                         Your genetic diet or exercise report
                                     </li>
-                                    <li class="section-description">
+                                    <li
+                                        class="section-description display-flex">
                                         <i class="fa-solid fa-check"></i>
                                         Diet plan or Exercise suggestions
                                     </li>
@@ -542,19 +551,23 @@
                                     Diet & Fitness Report
                                 </h4>
                                 <ul>
-                                    <li class="section-description">
+                                    <li
+                                        class="section-description display-flex">
                                         <i class="fa-solid fa-check"></i>
                                         Genetic sample test kit
                                     </li>
-                                    <li class="section-description">
+                                    <li
+                                        class="section-description display-flex">
                                         <i class="fa-solid fa-check"></i>
                                         Your genetic diet or exercise report
                                     </li>
-                                    <li class="section-description">
+                                    <li
+                                        class="section-description display-flex">
                                         <i class="fa-solid fa-check"></i>
                                         Diet & Exercise Summary Infographic
                                     </li>
-                                    <li class="section-description">
+                                    <li
+                                        class="section-description display-flex">
                                         <i class="fa-solid fa-check"></i>
                                         Diet plan
                                     </li>
@@ -593,27 +606,33 @@
                                     Diet & Fitness Max
                                 </h4>
                                 <ul>
-                                    <li class="section-description">
+                                    <li
+                                        class="section-description display-flex">
                                         <i class="fa-solid fa-check"></i>
                                         Genetic sample test kit
                                     </li>
-                                    <li class="section-description">
+                                    <li
+                                        class="section-description display-flex">
                                         <i class="fa-solid fa-check"></i>
                                         Your genetic diet & exercise report
                                     </li>
-                                    <li class="section-description">
+                                    <li
+                                        class="section-description display-flex">
                                         <i class="fa-solid fa-check"></i>
                                         Diet & Exercise Summary Infographic
                                     </li>
-                                    <li class="section-description">
+                                    <li
+                                        class="section-description display-flex">
                                         <i class="fa-solid fa-check"></i>
                                         Diet plan
                                     </li>
-                                    <li class="section-description">
+                                    <li
+                                        class="section-description display-flex">
                                         <i class="fa-solid fa-check"></i>
                                         Exercise suggestions
                                     </li>
-                                    <li class="section-description">
+                                    <li
+                                        class="section-description display-flex">
                                         <i class="fa-solid fa-check"></i>
                                         Weekly Check ups
                                     </li>
@@ -634,7 +653,7 @@
 
         <footer id="footer-part">
             <div class="container">
-                <div class="footer-container display-grid">
+                <div class="footer-container display-grid section-gap">
                     <div class="footer-text">
                         <h2>Fitness</h2>
                         <p class="section-description">
