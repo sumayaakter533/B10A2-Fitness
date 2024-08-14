@@ -101,6 +101,7 @@ ol {
 
 /* ************************************* Todo: Navbar part css start here ************************************* */
 .navbar-container {
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     padding: var(--p3) 0 var(--p1);
@@ -148,6 +149,7 @@ ol {
     grid-template-columns: repeat(2, 1fr);
 }
 .banner-text-content {
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
 }

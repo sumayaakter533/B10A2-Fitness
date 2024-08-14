@@ -1,4 +1,8 @@
 @media screen and (min-width: 768px) and (max-width: 1199px) {
+    .habit-card p > span,
+    .team-heading p > span {
+        display: inline;
+    }
     /* ******************************************* Todo: Navbar part css ****************************************** */
     .navbar-container {
         gap: 4rem;
@@ -6,7 +10,6 @@
     .navbar-nav {
         gap: 1.5rem;
     }
-    /* ************************************************************************************************************ */
 
     /* ******************************************* Todo: Banner part css ****************************************** */
     .banner-container {
@@ -45,7 +48,6 @@
         bottom: 3rem;
         left: 2rem;
     }
-    /* ************************************************************************************************************ */
 
     /* ******************************************** Todo: Habit part css ****************************************** */
     #habit-section {
@@ -57,10 +59,6 @@
     .habit-card > p {
         margin: 0 -20px;
     }
-    .habit-card p > span {
-        display: inline;
-    }
-    /* ************************************************************************************************************ */
 
     /* *********************************** Todo: Start run extra mile section css ********************************* */
     .run-container {
@@ -70,7 +68,6 @@
     .run-text-container p {
         padding-right: 5rem;
     }
-    /* ************************************************************************************************************ */
 
     /* ******************************** Todo: Start training & exercise section css ******************************* */
     .trainer-img3 .training-exercise-img-text p,
@@ -86,7 +83,6 @@
     .trainer-img6 .training-exercise-img-text p {
         right: 47%;
     }
-    /* ************************************************************************************************************ */
 
     /* ************************************ Todo: Start BMI calculator section css ******************************** */
     .BMI-calc-heading {
@@ -102,7 +98,6 @@
     .BMI-calc-form .btn {
         margin-right: 2rem;
     }
-    /* ************************************************************************************************************ */
 
     /* ***************************************** Todo: Start Team section css ************************************* */
     #team-section {
@@ -111,51 +106,41 @@
     .team-heading p {
         padding: 0.875rem 3rem 0;
     }
-    .team-heading p > span {
-        display: inline;
-    }
     .team-text h4 {
         font-size: 1rem;
     }
     .team-inner {
         margin-top: 3rem;
     }
-    /* ************************************************************************************************************ */
 
     /* ****************************** Todo: Challenge part - Training Rates css start here  *********************** */
-    #training-rate-section {
-        padding-top: 3.5rem;
-    }
     .training-rate-inner {
-        gap: 1.4rem;
-        padding-bottom: 4.5rem;
-    }
-    .training-rate-card-heading {
-        padding: 1.5rem;
+        gap: 1rem;
     }
     .training-rate-card-heading h2 {
-        font-size: 2.2rem;
+        font-size: 2rem;
     }
     .training-rate-card-heading span {
         padding-left: 0.5rem;
-        font-size: 1.2rem;
+        font-size: 1rem;
+    }
+    .training-rate-card-heading p {
+        font-size: 1.6rem;
+    }
+    .training-rate-card-description ul li {
+        font-size: 12px;
     }
     /* **************************************** Todo: Challenge part end here  ************************************ */
 
     /* **************************************** Todo: Start Footer section css ************************************ */
     .footer-container {
-        padding: 4rem 0;
         grid-template-columns: 44% 20% 20%;
     }
     .footer-text h2 {
         font-size: 4rem;
     }
-    .footer-text p {
-        padding-right: 0;
-    }
     .footer-links h3 {
         font-size: 1.5rem;
-        margin-bottom: 2rem;
     }
     .footer-links ul li a {
         font-size: 1rem;
@@ -163,29 +148,33 @@
     .footer-btm p {
         font-size: 1rem;
     }
-    /* ************************************************************************************************************ */
 }
 
 @media screen and (min-width: 576px) and (max-width: 767px) {
-    /* ******************************************* Todo: Navbar part css ****************************************** */
-    .navbar-container {
-        gap: 3rem;
+    .habit-heading p > span,
+    .training-exercise-heading p > span,
+    .BMI-calc-heading p > span,
+    .team-heading p > span {
+        display: inline;
     }
+
+    .run-text-container p,
+    .training-exercise-heading p,
+    #BMI-calculator-part .section-description {
+        padding-right: 3rem;
+    }
+    /* ******************************************* Todo: Navbar part css ****************************************** */
     .navbar-content {
         display: none;
     }
     .navbar-bars {
         display: block;
     }
-    /* ************************************************************************************************************ */
 
     /* ******************************************* Todo: Banner part css ****************************************** */
     .banner-container {
-        flex-direction: column;
         gap: 2rem;
-    }
-    .banner-text-content {
-        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
     }
     .banner-title {
         font-size: 3.5rem;
@@ -201,69 +190,45 @@
     }
 
     /* ---------------------------------------------------- */
-
     .banner-img-content {
-        position: relative;
-        padding-left: 8rem;
+        padding-left: 7.5rem;
     }
     .banner-img-content img {
-        width: 390px;
+        width: 50vw;
     }
     .banner-img-content .banner-card-1 {
-        top: 13rem;
-        right: -13rem;
+        top: 10rem;
+        right: 8rem;
     }
     .banner-img-content .banner-card-2 {
-        bottom: 9.5rem;
-        left: 5.2rem;
+        bottom: 3rem;
+        left: 0;
     }
     .banner-card-icon {
         color: var(--primary-color);
     }
-    /* ************************************************************************************************************ */
 
     /* ******************************************** Todo: Habit part css ****************************************** */
-    #habit-section {
-        padding: 5.125rem 0;
-    }
-    .habit-heading p {
-        padding: 0.875rem 5rem 0;
-    }
-    .habit-heading p > span {
-        display: inline;
-    }
     .habit-inner {
-        gap: 3.5rem;
         grid-template-columns: repeat(2, 1fr);
     }
     .habit-card img {
         width: 80%;
     }
-    /* ************************************************************************************************************ */
+    .habit-heading p {
+        padding: 0.875rem var(--p1);
+    }
 
     /* *********************************** Todo: Start run extra mile section css ********************************* */
-    #run-part {
-        padding-bottom: 5.125rem;
-    }
     .run-container {
         gap: 3rem;
         padding: 2.5rem;
         grid-template-columns: repeat(1, 1fr);
     }
-    .run-text-container p {
-        padding-right: 3rem;
-    }
-    /* ************************************************************************************************************ */
 
     /* ******************************** Todo: Start training & exercise section css ******************************* */
-    .training-exercise-heading p {
-        padding-right: 4rem;
-    }
-    .training-exercise-heading p > span {
-        display: inline;
-    }
     .training-exercise-inner {
-        padding: 3rem 0 4.5rem;
+        padding-top: var(--p1);
     }
     .trainer-img3,
     .trainer-img6 {
@@ -288,18 +253,10 @@
     .trainer-img4 .training-exercise-img-text p {
         top: calc(100% - 4.5rem);
     }
-    /* ************************************************************************************************************ */
 
     /* ************************************ Todo: Start BMI calculator section css ******************************** */
-    #BMI-calculator-part .section-description {
-        padding-right: 4rem;
-    }
     .BMI-calc-heading {
-        padding-bottom: 4.5rem;
         padding-left: 0px;
-    }
-    .BMI-calc-heading p > span {
-        display: inline;
     }
     .BMI-calc-container {
         gap: 3rem;
@@ -309,7 +266,7 @@
         font-size: 1.5rem;
     }
     .BMI-calc-chart table {
-        margin-top: 2.5rem;
+        margin-top: var(--p2);
     }
     .BMI-calc-chart table tr > th,
     .BMI-calc-chart table tr > td {
@@ -319,32 +276,22 @@
     .BMI-calc-form .btn {
         margin-right: 5rem;
     }
-    /* ************************************************************************************************************ */
-
     /* ***************************************** Todo: Start Team section css ************************************* */
-    #team-section {
-        padding: 4.5rem 0;
-    }
     .team-heading p {
-        padding: 0.875rem 5rem 0;
-    }
-    .team-heading p > span {
-        display: inline;
+        padding: 0.875rem 5rem;
     }
     .team-inner {
-        margin-top: 3rem;
         grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 320px);
     }
     .team-text h4 {
         font-size: 1rem;
     }
-    /* ************************************************************************************************************ */
 
     /* ****************************** Todo: Challenge part - Training Rates css start here  *********************** */
     .training-rate-inner {
         grid-template-columns: 1fr;
-        padding: 2.875rem 0px 5.5rem;
-        gap: 4rem;
+        padding-top: var(--p1);
     }
     .training-rate-card:hover {
         transform: scaleY(1);
@@ -357,7 +304,7 @@
     }
     .footer-text {
         grid-column: 1/4;
-        margin-bottom: 6.375rem;
+        margin-bottom: var(--p1);
     }
     .footer-text p {
         padding-right: 4rem;
@@ -374,6 +321,12 @@
     }
     .section-title {
         font-size: 2rem;
+    }
+    .habit-heading p > span,
+    .training-exercise-heading p > span,
+    .BMI-calc-heading p > span,
+    .team-heading p > span {
+        display: inline;
     }
 
     /* ******************************************* Todo: Navbar part css ****************************************** */
@@ -397,6 +350,7 @@
     }
     .banner-btn {
         gap: 0.5rem;
+        flex-wrap: wrap;
     }
     .btn {
         font-size: 0.875rem;
@@ -406,32 +360,36 @@
     /* ---------------------------------------------------- */
 
     .banner-img-content {
-        padding-left: 1.5rem;
+        padding-left: 3.5rem;
+    }
+    .banner-img-content img {
+        width: 70vw;
     }
     .banner-img-card h4 {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
     .banner-img-content .banner-img-card {
-        padding: 0.875rem 1rem;
+        padding: 0.5rem;
     }
     .banner-img-content .banner-card-1 {
-        top: 9rem;
+        top: 7.5rem;
         right: 0;
     }
     .banner-img-content .banner-card-2 {
-        bottom: 4rem;
-        left: 0rem;
+        bottom: 3rem;
+        left: 0;
     }
     .banner-card-icon {
+        width: 2rem;
+        height: 2rem;
+        font-size: 1rem;
+        line-height: 2rem !important;
         color: var(--primary-color);
     }
 
     /* ******************************************** Todo: Habit part css ****************************************** */
     #habit-section {
         padding: 0 0 var(--section-gap);
-    }
-    .habit-heading p > span {
-        display: inline;
     }
     .habit-inner {
         margin-top: var(--p1);
@@ -454,9 +412,6 @@
     /* ******************************** Todo: Start training & exercise section css ******************************* */
     #training-exercise-part {
         padding: var(--section-gap) 0 var(--p2);
-    }
-    .training-exercise-heading p > span {
-        display: inline;
     }
     .training-exercise-inner {
         padding-top: var(--p1);
@@ -539,9 +494,6 @@
         padding-left: 0;
         margin-bottom: var(--p1);
     }
-    .BMI-calc-heading p > span {
-        display: inline;
-    }
     .BMI-calc-container {
         gap: var(--p2);
         grid-template-columns: repeat(1, 1fr);
@@ -565,13 +517,10 @@
     #team-section {
         padding: var(--section-gap) 0;
     }
-    .team-heading p > span {
-        display: inline;
-    }
     .team-inner {
         margin-top: var(--p1);
         grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(6, 300px);
+        grid-template-rows: repeat(6, 320px);
     }
 
     /* ****************************** Todo: Challenge part - Training Rates css start here  *********************** */
